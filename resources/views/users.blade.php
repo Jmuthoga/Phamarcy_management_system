@@ -113,7 +113,7 @@
 								<div class="form-group">
 									<select class="select2 form-select form-control" name="role">
 										@foreach ($roles as $role)
-											<option value="{{$role->name}}">{{$role->name}}</option>
+										<option value="{{$role->name}}">{{$role->name}}</option>
 										@endforeach
 									</select>
 								</div>
@@ -185,7 +185,7 @@
 								<div class="form-group">
 									<select class="select2 form-select form-control edit_role" name="role">
 										@foreach ($roles as $role)
-											<option value="{{$role->name}}">{{$role->name}}</option>
+										<option value="{{$role->name}}">{{$role->name}}</option>
 										@endforeach
 									</select>
 								</div>
@@ -233,24 +233,24 @@
 <!-- Select2 js-->
 <script src="{{asset('assets/plugins/select2/js/select2.min.js')}}"></script>
 
-	<script>
-		$(document).ready(function() {
-			$('#datatable-export').on('click','.editbtn',function (){
-				event.preventDefault();
-				jQuery.noConflict();
-				$('#edit_user').modal('show');
-				var id = $(this).data('id');
-				var name = $(this).data('name');
-				var email = $(this).data('email');
-				var role = $(this).data('role');
-				$('#edit_id').val(id);
-				$('.edit_name').val(name);
-				$('.edit_email').val(email);
-				$('.edit_role').val(role);
-			});
-			//
-
-
+<script>
+	$(document).ready(function() {
+		$('#datatable-export').on('click', '.editbtn', function() {
+			event.preventDefault();
+			jQuery.noConflict();
+			$('#edit_user').modal('show');
+			var id = $(this).data('id');
+			var name = $(this).data('name');
+			var email = $(this).data('email');
+			var role = $(this).data('role');
+			$('#edit_id').val(id);
+			$('.edit_name').val(name);
+			$('.edit_email').val(email);
+			$('.edit_role').val(role);
 		});
-	</script>
+		//
+
+
+	});
+</script>
 @endpush
