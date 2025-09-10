@@ -1,5 +1,11 @@
 # Pharmacy Management System
 
+<p align="center">
+  <a href="https://www.jminnovatechsolution.co.ke" target="_blank">
+    <img src="https://www.jminnovatechsolution.co.ke/assets/img/iconbg-512.png" width="300" alt="JM Innovatech Logo">
+  </a>
+</p>
+
 ## About
 
 This is a modern **Pharmacy Management System** built with **Laravel**, designed to help pharmacies manage drugs, inventory, orders, sales, and customers efficiently.  
